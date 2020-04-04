@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     
+    <link rel="shotcut icon" type="image/png" href="tp.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2|Bree+Serif&display=swap" rel="stylesheet">
+    <title>Food Fix.Com |Best online food delivey service in India </title>
+<style>
+    *{ 
+    padding: 0;
+    margin:0; 
+    transition: 1s;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0em; 
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo{
+    margin: 2px 34px;
+}
+
+#logo img{
+    height: 49px;
+    margin: 4px 0px;
+    border-radius: 35px;
+}
+#navbar ul{
+    display:flex;
+    margin-right: 2px;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding :10px;
+    color:white;
+    
+    border-radius: 34px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+
+    list-style:none;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+   
+    background-color: blanchedalmond;
+    color:black
+}
+
+#Home::before{
+    content: "";
+    background: url(background1.jpg) no-repeat ;
+    background-size: 100% 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 235px;
+    padding: 12px;
+
+}
+.primary{
+    color:white;
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#h2{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    position: relative;
+    top: -66px;
+     
+    font-size: 49px;
+}
+#Home p{
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+     color:white;
+}
+#btn{
+    padding: 5px 7px;
+    margin: 13px;
+    border-radius: 9px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+    cursor: pointer;
+    border:brown;
+}
+#btn:hover{
+    border: black;
+    color:rgb(43, 35, 35);
+    background-color: orange;
+}
+.primary-center{
+    color: black;
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 5px;
+    top: -6px;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#services .box{
+    
+    
+    padding: 34px;
+    margin: 2px  3px;;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    
+}
+#services .box img{
+    height: 150px;
+    width:150px;
+    display: block;
+    margin: auto;
+    border-radius: 32px;
+    ;
+}
+.secondary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    font-family: 'Bree Serif', serif;
+}
+.clients-section::before{
+    content: "";
+   position: absolute;
+    background: url(clients.jpg) no-repeat center center/cover;
+    width: 100%;
+    top: 58px;
+    height: 289px;
+    opacity: 0.9;
+    z-index: -1;
+    
+}
+.clients-section{
+    height: 344px;
+    position: relative;
+    
+}
+
+.clients{
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+.clients img{
+    position: relative;
+    width:98px;
+    height: 88px;
+    padding: 34px;
+    top: 36px;
+}
+ 
+#contact::before{
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+    opacity: 0.7;
+    
+    top: 35%;
+    height: 366px;
+    position: relative;
+    background: url(contact.jpg) no-repeat center center/cover;
+    
+    
+}
+
+#contact{
+    height: 366px;
+    position: relative;
+    background: url(contact.jpg) no-repeat center center/cover;
+    top: 83px;
+}
+
+.center{
+    text-align: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    position: relative;
+    top: -69px;
+}
+.contact-box input, 
+.contact-box textarea,
+.contact-box button{
+    width: 100%;
+    position: relative;
+    margin-bottom: 4px;
+    border-radius: 28px;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(143, 131, 125, 0.945);
+    outline: none;
+    border: 2px solid rgb(255, 240, 240);
+
+} 
+.contact-box input:hover {
+    border-radius: 6px;
+    background-color: rgba(80, 233, 233, 0.596);
+    transition: 1s;
+    border:2px solid rgb(105, 105, 64);
+    
+}
+::placeholder{
+    color: white;
+}
+.contact-box textarea:hover{
+    background-color: rgba(80, 233, 233, 0.596);
+    transition: 1s;
+    border-radius: 11px;
+    border:2px solid rgb(105, 105, 64);
+}
+  
+
+.contact-box form{
+    position: relative;
+    width: 43%;
+    top: 0px;
+}
+
+ 
+.button { 
+    padding: 5px 7px;
+    font-family :'Bree Serif', serif;
+}
+
+.button:hover{
+    color: black;
+    background-color: rgba(128, 255, 0, 0.459);
+    transition: 1s;
+    border-radius: 11px;
+}
+ @media  screen and (max-width: 450px){
+     
+   
+    #Home::before{
+    width: 106%;
+    height: 68%;
+    
+}
+
+#Home{
+   
+   text-align: center;
+   
+   left: 33px;
+   
+   width: 350px;
+}
+#Home h1{
+    font-size: 27px;
+    position: relative;
+    left: 18%;
+    color: white;
+}
+#Home p{
+    position: relative; 
+    left: 20%;
+    font-size: 15px;
+}
+#btn{
+    position: relative;
+    left: 15%;
+}
+#services{
+        
+    display: flex;
+    
+    left: 8px;
+    flex-direction: column;
+    width: 100%;
+}
+.primary-center{
+    left: 10%;
+    
+    width: 86%;
+}
+
+#navbar{
+    flex-direction: column;
+    width: 470px;
+    position:  sticky;
+}
+#navbar ul{
+ 
+    width: 433px;
+    height: 41px;
+   
+    justify-content: center;
+}
+#navbar ul li a{
+  
+  position: relative;
+  top: 6px;
+  
+  font-size: 13px;
+  height: 111px;
+  padding :5px;
+  margin-right: 9px;
+
+
+}
+.clients-section{
+    height: 200px;
+    position: relative;
+    flex-direction: column;
+    
+    left: 4px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+   .clients-section::before{
+    content: "";
+   position: absolute;
+    background: url(clients.jpg) no-repeat center center/cover;
+    width:110%; 
+    height: 50%;  
+    left: 2%; 
+
+}
+.clients-section img{
+    top: -10px;
+    left: -11px; 
+    width: 30px;
+   height: 60px;
+}
+#contact h2{
+    color: rgb(32, 32, 31);
+     left: 3%;
+    height:  52px;
+    top: 0px;
+    font-size: 31px;
+
+}
+
+
+.contact-box{
+    top: -9px;
+     
+    position: relative;
+    width: 90%;
+    left: 6%;
+}
+#contact{
+    height: 313px;
+    width: 100%;
+    position: relative;
+    background: url(contact.jpg) no-repeat center center/cover;
+    top: -39px;
+    left: 2%;
+}
+ } 
+</style>
+</head>
+
+<body>
+ 
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="tp.png" h height="50px" width="50px" alt="Food Fix">
+        </div>
+        <ul>
+            <li class="items"><a href="#Home">Home</a></li>
+            <li class="items"><a href="#services">Our Services</a></li>
+            <li class="items"><a href="#clients">Clients</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
+            <li class="items"><a href="#">Order Online</a></li>
+        </ul>
+    </nav>
+    <div id="Home">
+        <h1 class="primary">Welcome to Food Fix </h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusantium praesentium nostrum.</P>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <button id="btn">ORDER NOW</button>
+    </div>
+    <section class="services-container">
+        <h1 class="primary-center"> Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="logos/odering.png" alt="">
+                <h2 class="secondary">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi suscipit ut
+                    aliquam odio,
+                    molestiae exercitationem maiores veritatis. Consequatur, magnam id voluptas quaerat quae tempore
+                    asperiores esse blanditiis ipsa odit ipsum voluptatum.</p>
+            </div>
+
+            <div class="box">
+                <img src="logos/catering.png" alt="">
+                <h2 class="secondary">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi suscipit ut
+                    aliquam odio,
+                    molestiae exercitationem maiores veritatis. Consequatur, magnam id voluptas quaerat quae tempore
+                    asperiores esse blanditiis ipsa odit ipsum voluptatum.</p>
+            </div>
+            <div class="box">
+                <img src="logos/delivery.png" alt="">
+                <h2 class="secondary">order Delivery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi suscipit ut
+                    aliquam odio,
+                    molestiae exercitationem maiores veritatis. Consequatur, magnam id voluptas quaerat quae tempore
+                    asperiores esse blanditiis ipsa odit ipsum voluptatum.</p>
+            </div>
+        </div>
+    </section>
+    <section class="clients-section">
+        <h2 class="primary-center">Our Clients</h2>
+        <div class="clients">
+            <div class="client-details">
+                <img src="clients/apple.png" alt="Apple">
+            </div>
+
+            <div class="client-details">
+                <img src="clients/hp.png" alt="">
+            </div>
+
+            <div class="client-details">
+                <img src="clients/microsoft.png" alt="">
+            </div>
+
+            <div class="client-details">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+            <div class="client-details" id="gym">
+                <img src="logo.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 id="h2">Contact Us</h2>
+        <div class=contact-box>
+            
+            <form action="" id="form1">
+                <div class="form-grp">
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+              
+                <div class="form-grp">
+                    <input type="text" id="ph_no" placeholder="Phone number">
+                </div>
+               
+                <div class="form-grp">
+                    <input type="email" id="mail" placeholder="Email Id">
+                </div>
+                
+                <div> <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea></div> 
+          
+                <button class="button">Login </button>
+                <button class="button"> share</button>
+              
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
